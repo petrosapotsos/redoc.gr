@@ -1,0 +1,38 @@
+<h3>Add Party</h3>
+<div class="row-auto">
+  <form action="/parties" method="POST" class="row-gap-12">
+    <div class="row-auto">
+      <div>
+        <input type="text" id="name" name="name">
+        <label for="name">Name</label>
+      </div>
+    </div>
+
+    <div class="row-auto">
+      <div>
+        <select name="type" id="type">
+          <option value="natural" selected>Natural Person</option>
+          <option value="nonNatural">Legal Entity</option>
+          <option value="baUnit">Basic Administrative Unit</option>
+          <option value="group">Group</option>
+        </select>
+        <label for="type">Type</label>
+      </div>
+    </div>
+
+    <div class="row-auto">
+      <div>
+        <h5>Party Details</h5>
+        <textarea name="details" id="details"></textarea>
+      </div>
+    </div>
+
+    <div class="row-auto">
+      <input type="submit" value="Save" class="">
+      <a href="/dashboard" class="bg-orange-400">Cancel</a>
+    </div>
+  </form>
+</div>
+<script>
+  ClassicEditor.create(document.querySelector('#details'))
+</script>

@@ -1,0 +1,16 @@
+<div class="row">
+  <h3>{{party.title}}
+    <small>{{{editIcon party.user user party._id false}}}</small>
+  </h3>
+  <div>
+    <span></span>
+    {{{party.details}}}
+  </div>
+  <div>
+    <span>{{party.user.name}}</span>
+    <img src="{{party.user.image}}" alt="">
+  </div>
+  <div>
+    <a href="/parties/user/{{party.user._id}}">More from {{party.user.name}}</a>
+  </div>
+</div>

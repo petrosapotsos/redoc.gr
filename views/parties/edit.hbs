@@ -1,0 +1,41 @@
+<h3>Edit Party</h3>
+<div class="row-auto">
+  <form action="/parties/{{party._id}}" method="POST" class="row-gap-12">
+    <input type="hidden" name="_method" value="PUT">
+    <div class="row-auto">
+      <div>
+        <input type="text" id="name" name="name" value="{{party.name}}">
+        <label for="name">Name</label>
+      </div>
+    </div>
+
+    <div class="row-auto">
+      <div>
+        <select name="type" id="type">
+            {{#select party.type}}
+          <option value="natural" selected>Natural Person</option>
+          <option value="nonNatural">Legal Entity</option>
+          <option value="baUnit">Basic Administrative Unit</option>
+          <option value="group">Group</option>
+          {{/select}}
+        </select>
+        <label for="type">Type</label>
+      </div>
+    </div>
+
+    <div class="row-auto">
+      <div>
+        <h5>Party Details</h5>
+        <textarea name="details" id="details">{{party.details}}</textarea>
+      </div>
+    </div>
+
+    <div class="row-auto">
+      <input type="submit" value="Save" class="">
+      <a href="/dashboard" class="bg-orange-400">Cancel</a>
+    </div>
+  </form>
+</div>
+<script>
+  ClassicEditor.create(document.querySelector('#details'))
+</script>
