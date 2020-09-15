@@ -3,6 +3,8 @@
     "gtag",
     "navcontent",
     "resave",
-    "scrollpos"
+    "scrollpos",
+    "tailwind",
+    "tailwindcss"
   ]
 }
