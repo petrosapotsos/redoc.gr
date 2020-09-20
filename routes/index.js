@@ -9,6 +9,8 @@ const Party = require('../models/Party')
 router.get('/', (req, res) => {
     res.render('home')
 })
+
+/*
 // @desc    Login/Landing Page
 // @route   GET /login
 router.get('/login', ensureGuest, (req, res) => {
@@ -31,5 +33,5 @@ router.get('/dashboard', ensureAuth, async (req, res) => {
         res.render('error/500')
     }
 })
-
+*/
 module.exports = router
