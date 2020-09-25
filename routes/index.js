@@ -1,14 +1,14 @@
-const express = require ('express')
-const router = express.Router()
-const { ensureAuth, ensureGuest} = require('../middleware/auth')
+const express = require('express');
+const router = express.Router();
+const { ensureAuth, ensureGuest } = require('../middleware/auth');
 
-const Party = require('../models/Party')
+const Party = require('../models/Party');
 
 // @desc    Landing Page
 // @route   GET /
 router.get('/', (req, res) => {
-    res.render('home')
-})
+  res.render('home');
+});
 
 /*
 // @desc    Login/Landing Page
@@ -34,4 +34,4 @@ router.get('/dashboard', ensureAuth, async (req, res) => {
     }
 })
 */
-module.exports = router
+module.exports = router;
