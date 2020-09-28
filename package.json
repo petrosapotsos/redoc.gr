@@ -4,7 +4,7 @@
   "description": "redoc.gr website and app",
   "main": "app.js",
   "scripts": {
-    "start": "cross-env NODE_ENV=production node app",
+    "start": "NODE_ENV=production node app",
     "dev": "cross-env NODE_ENV=development nodemon app",
     "build:css": "postcss tailwind.css -o public/css/tailwind.css"
   },
