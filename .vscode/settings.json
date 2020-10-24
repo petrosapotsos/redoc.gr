@@ -14,8 +14,10 @@
   "appService.defaultWebAppToDeploy": "/subscriptions/159787a8-c543-4a37-a641-e4c2f37e86a5/resourceGroups/appsvc_linux_centralus/providers/Microsoft.Web/sites/redocgr",
   "appService.deploySubpath": ".",
   "cSpell.words": [
+    "deploypath",
     "joinus",
     "learnmore",
+    "redocgr",
     "xlink"
   ]
 }
